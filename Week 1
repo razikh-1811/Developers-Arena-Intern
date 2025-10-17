@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<body></body>
+    <header>
+        <h1>Hello! I'm Shaik Mahaboob Razikh</h1>
+        <p>Welcome to my personal portfolio. I'm a passionate web developer interested in creating amazing web experiences.</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML& CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js & Express</li>
+            <li>MongoDB</li>
+            <li>Python&Java</li>
+            
+        </ul>
+    </section>
+
+    <hr>
+
+   
+    <section>
+        <h2>My Projects</h2>
+        <ol>
+            <li>
+                <strong>Portfolio Website</strong> - A personal portfolio website showcasing my projects and skills.
+            </li>
+            <li>
+                <strong>Login2Details</strong>  -This project is a simple web application that includes a user login system with options for registration and password recovery. After logging in, users can fill out a family details form. All entered information is displayed on a final summary page.
+            </li>
+            <li>
+                <strong>Rock-Paper-Scissor</strong>-A simple Rock-Paper-Scissors game built with HTML, CSS, and JavaScript. Play against the computer with instant results and score tracking.
+            </li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- Contact Form Section -->
+    <section>
+        <h2>Contact Me</h2>
+        <form action="mailto:razikh1811@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>© 2025 Razikh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
