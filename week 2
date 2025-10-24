@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio | Shaik Mahaboob Razikh</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f6fa;
+      color: #2f3640;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0097e6, #00a8ff);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #273c75;
+      margin-bottom: 15px;
+      border-left: 4px solid #0097e6;
+      padding-left: 10px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #dcdde1;
+      margin: 40px 0;
+    }
+
+    /* ---------- Form Styles ---------- */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #dcdde1;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0097e6;
+      box-shadow: 0 0 5px rgba(0,151,230,0.4);
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 120px;
+      padding: 10px;
+      background: #0097e6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin-right: 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background: #00a8ff;
+    }
+
+    form input[type="reset"] {
+      background: #dcdde1;
+      color: #2f3640;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      background: #273c75;
+      color: white;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      section {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello! I'm Shaik Mahaboob Razikh</h1>
+    <p>Welcome to my personal portfolio. I'm a passionate web developer interested in creating amazing web experiences.</p>
+  </header>
+
+  <section>
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Node.js & Express</li>
+      <li>MongoDB</li>
+      <li>Python & Java</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Projects</h2>
+    <ol>
+      <li><strong>Portfolio Website</strong> — A personal portfolio website showcasing my projects and skills.</li>
+      <li><strong>Login2Details</strong> — A simple web app with user login, registration, and a family details form displayed on a summary page.</li>
+      <li><strong>Rock-Paper-Scissor</strong> — A fun game built using HTML, CSS, and JavaScript.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="mailto:razikh1811@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <div style="display: flex;">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Razikh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
