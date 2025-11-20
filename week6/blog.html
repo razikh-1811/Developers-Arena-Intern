@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Charan's Blog — Week 6 (LocalStorage CRUD)</title>
+  <link href="blog.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Charan's Blog</h1><p class="tag">Notes & posts (Local Storage)</p></div>
+      <nav class="site-nav"><a href="index.html">Portfolio</a><a href="blog.html" aria-current="page">Blog</a></nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="panel write-panel">
+      <h2 id="form-title">Create Post</h2>
+      <form id="post-form" novalidate>
+        <input id="post-id" type="hidden" />
+        <label for="title">Title</label>
+        <input id="title" name="title" type="text" required placeholder="Post title" />
+
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="6" required placeholder="Write your post..."></textarea>
+
+        <div class="row">
+          <label for="tags">Tags (comma-separated)</label>
+          <input id="tags" name="tags" type="text" placeholder="css, javascript, tutorial" />
+        </div>
+
+        <div class="row controls">
+          <button type="submit" class="btn">Save Post</button>
+          <button id="cancel-edit" type="button" class="btn ghost" hidden>Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel list-panel">
+      <div class="list-top">
+        <h2>Your Posts</h2>
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Search posts..." />
+          <select id="sort">
+            <option value="new">Newest</option>
+            <option value="old">Oldest</option>
+            <option value="title">Title A–Z</option>
+          </select>
+          <button id="clear-all" class="btn ghost">Clear All</button>
+        </div>
+      </div>
+
+      <ul id="posts" class="posts-list" aria-live="polite"></ul>
+      <p id="empty" class="muted">No posts yet — create your first post!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2025</span> Charan's Blog</p>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
