@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "Blog API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Posts",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/posts"
+      }
+    },
+    {
+      "name": "Create Post",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Authorization", "value": "Bearer YOUR_JWT_TOKEN" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"My Post\", \"content\": \"Hello World\" }"
+        },
+        "url": "{{baseUrl}}/api/posts"
+      }
+    }
+  ]
+}
